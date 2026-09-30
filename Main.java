@@ -129,7 +129,7 @@ class Students {
             }
         }
         if (!hasBirthdays) {
-            System.out.println("В этом месяце др ни у кого нет");
+            System.out.println("В этом месяце др ни у когоо нет");
         }
     }
 
