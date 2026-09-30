@@ -120,7 +120,7 @@ class Students {
     // а) У кого др в этом месяце
     public static void printBirthdaysCurrentMonth() {
         int currentMonth = LocalDate.now().getMonthValue();
-        System.out.println("\nа) Ученики с днем рождения в текущем месяце dd(№ " + currentMonth + "):");
+        System.out.println("\nа) Ученики с днем рождения в текущем месяце (№ " + currentMonth + "):");
         boolean hasBirthdays = false;
         for (Students s : classList) {
             if (s.getBirthDate().getMonthValue() == currentMonth) {
