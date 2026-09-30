@@ -118,40 +118,13 @@ class Students {
     }
 
     // а) У кого др в этом месяце
-    public static void printBirthdaysCurrentMonth() {
-        int currentMonth = LocalDate.now().getMonthValue();
-        System.out.println("\nа) Ученики с днем рождения в текущем месяце (№ " + currentMonth + "):");
-        boolean hasBirthdays = false;
-        for (Students s : classList) {
-            if (s.getBirthDate().getMonthValue() == currentMonth) {
-                System.out.println(s);
-                hasBirthdays = true;
-            }
-        }
-        if (!hasBirthdays) {
-            System.out.println("В этом месяце др ни у когоо нет");
-        }
-    }
+
 
     // б) Определяем кого больше
 
 
     // в) Сортировка по фамилиям пузырьком
-    public static void sortByFullName() {
-        for (int i = 0; i < classList.length - 1; i++) {
-            for (int j = 0; j < classList.length - i - 1; j++) {
-                if (classList[j].getFullName().compareTo(classList[j + 1].getFullName()) > 0) {
-                    Students rab = classList[j];
-                    classList[j] = classList[j + 1];
-                    classList[j + 1] = rab;
-                }
-            }
-        }
-        System.out.println("\nв) Отсортированный список по фамилиям:");
-        for (int i = 0; i < classList.length; i++) {
-            System.out.println(classList[i]);
-        }
-    }
+
 }
 
 public class Main {

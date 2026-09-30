@@ -34,4 +34,20 @@ public class StudentsService {
         else
             System.out.println("Всех поровну!");
     }
+
+    public static void sortByFullName() {
+        for (int i = 0; i < classList.length - 1; i++) {
+            for (int j = 0; j < classList.length - i - 1; j++) {
+                if (classList[j].getFullName().compareTo(classList[j + 1].getFullName()) > 0) {
+                    Students rab = classList[j];
+                    classList[j] = classList[j + 1];
+                    classList[j + 1] = rab;
+                }
+            }
+        }
+        System.out.println("\nв) Отсортированный список по фамилиям:");
+        for (int i = 0; i < classList.length; i++) {
+            System.out.println(classList[i]);
+        }
+    }
 }
