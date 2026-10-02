@@ -113,19 +113,19 @@ public class Main {
             switch (c) {
                 // ИСПРАВЛЕНО: Теперь кейсы сдвинуты и отвечают за новые пункты меню
                 case 1:
-                    Students.printClass();
+                    StudentsService.printClass();
                     break;
                 case 2:
-                    Students.printBirthdaysCurrentMonth();
+                    StudentsService.printBirthdaysCurrentMonth();
                     break;
                 case 3:
-                    Students.compareGender();
+                    StudentsService.compareGender();
                     break;
                 case 4:
-                    Students.sortByFullName();
+                    StudentsService.sortByFullName();
                     break;
                 case 5:
-                    Students.addStudents();
+                    StudentsService.addStudents();
                     break;
                 case 6:
                     System.out.println("Выход выполнен.");
