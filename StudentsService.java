@@ -61,4 +61,10 @@ public class StudentsService {
             classList[i] = new Students();
         }
     }
+    public static void printClass() {
+        System.out.println("\nСписок учеников класса: ");
+        for (int i = 0; i < classList.length; i++) {
+            System.out.println(classList[i]);
+        }
+    }
 }
