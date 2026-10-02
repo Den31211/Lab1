@@ -78,4 +78,12 @@ public class StudentsService {
             System.out.println(classList[i]);
         }
     }
+    public static void addStudents() {
+        Students[] newList = new Students[classList.length + 1];
+        for (int i = 0; i < classList.length; i++) {
+            newList[i] = classList[i];
+        }
+        newList[classList.length] = new Students();
+        classList = newList;
+    }
 }
