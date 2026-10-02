@@ -9,17 +9,7 @@ class Students {
     private LocalDate birthDate;
     private char gender;
 
-    // массив для хранения списка учеников
-    private static Students[] classList;
-    static {
-        classList = new Students[] {
-                new Students("Иванов И.И.", LocalDate.of(2010, 9, 15), 'М'),
-                new Students("Иванова М.И.", LocalDate.of(2010, 8, 19), 'Ж'),
-                new Students("Петров П.В.", LocalDate.of(2010, 10, 10), 'М'),
-                new Students("Сидоров А.И.", LocalDate.of(2011, 5, 12), 'М'),
-                new Students("Николаева Н.Н.", LocalDate.of(2010, 12, 14), 'Ж'),
-        };
-    }
+
 
     // Конструктор для создания готовых объектов
     public Students(String fullName, LocalDate birthDate, char gender) {

@@ -2,6 +2,17 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class StudentsService {
+    // массив для хранения списка учеников
+    private static Students[] classList;
+    static {
+        classList = new Students[] {
+                new Students("Иванов И.И.", LocalDate.of(2010, 9, 15), 'М'),
+                new Students("Иванова М.И.", LocalDate.of(2010, 8, 19), 'Ж'),
+                new Students("Петров П.В.", LocalDate.of(2010, 10, 10), 'М'),
+                new Students("Сидоров А.И.", LocalDate.of(2011, 5, 12), 'М'),
+                new Students("Николаева Н.Н.", LocalDate.of(2010, 12, 14), 'Ж'),
+        };
+    }
     public static void printBirthdaysCurrentMonth() {
         int currentMonth = LocalDate.now().getMonthValue();
         System.out.println("\nа) Ученики с днем рождения в текущем месяце (№ " + currentMonth + "):");
