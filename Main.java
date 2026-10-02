@@ -98,16 +98,7 @@ class Students {
         return String.format("%s, Пол: %s, Дата рождения: %s", fullName, gender, birthDate);
     }
 
-    public static void fillClass() {
-        System.out.print("Введите количсество учеников: ");
-        int n = (new Scanner(System.in)).nextInt();
-        classList = new Students[n];
-        System.out.println("Введите инфо об учениках: ");
-        for (int i = 0; i < classList.length; i++) {
-            System.out.println("Ученик" + (i + 1) + "=>");
-            classList[i] = new Students();
-        }
-    }
+
 
     // Вывод всего списка
     public static void printClass() {

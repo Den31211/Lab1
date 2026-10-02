@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class StudentsService {
     public static void printBirthdaysCurrentMonth() {
@@ -48,6 +49,16 @@ public class StudentsService {
         System.out.println("\nв) Отсортированный список по фамилиям:");
         for (int i = 0; i < classList.length; i++) {
             System.out.println(classList[i]);
+        }
+    }
+    public static void fillClass() {
+        System.out.print("Введите количсество учеников: ");
+        int n = (new Scanner(System.in)).nextInt();
+        classList = new Students[n];
+        System.out.println("Введите инфо об учениках: ");
+        for (int i = 0; i < classList.length; i++) {
+            System.out.println("Ученик" + (i + 1) + "=>");
+            classList[i] = new Students();
         }
     }
 }
