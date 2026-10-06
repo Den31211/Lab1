@@ -86,4 +86,13 @@ public class StudentsService {
         newList[classList.length] = new Students();
         classList = newList;
     }
+    public static Students searchByName(String name){
+        System.out.println("Поиск ученика: " + name);
+        for (int i = 0; i < classList.length; i++) {
+            if (classList[i].getFullName().equals(name)) {
+                return classList[i];
+            }
+        }
+        return null;
+    }
 }
