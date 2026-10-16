@@ -9,7 +9,7 @@ public class Main {
             System.out.println("2. Выдать список учеников с ДР в текущем месяце");
             System.out.println("3. Определить, кого больше (мальчиков/девочек)");
             System.out.println("4. Упорядочить учеников по фамилиям");
-            System.out.println("5. Добавить ученика вручную");
+            System.out.println("5. Добавить ученика вручную!");
             System.out.println("6. Выход");
             System.out.print("Выберете пункт меню (1..6) => ");
 
