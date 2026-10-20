@@ -5,7 +5,7 @@ public class Main {
         cycle: while (true) {
             System.out.println("\n--- МЕНЮ ---");
             // ИСПРАВЛЕНО: Пункт 1 убран из вывода меню
-            System.out.println("1. Распечатать весь список");
+            System.out.println("1. Распечатать весь список!");
             System.out.println("2. Выдать список учеников с ДР в текущем месяце");
             System.out.println("3. Определить, кого больше (мальчиков/девочек)");
             System.out.println("4. Упорядочить учеников по фамилиям");
